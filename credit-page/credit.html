@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- en mode english international students-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySphere</title>
+    <link rel="stylesheet" href="credit.css">
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+    <meta name="description" content="Welcome back on MySphere ! Log into your account and keep updating your life with your friends...">
+    
+</head>
+<body>
+    <header> <!--https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/header-->
+    <h1 id="logo"><a href="../index.html"> MySphere</a></h1>       <p id="date">00:00:00 DD/MM/YY</p>
+    </header>
+
+    <div id="main">
+
+        <div id="left">
+            <div id="title-section">
+                <h2 id="Titre">Thanks for using our website !</h2>
+                <img id="heart" src="../assets/windows/heart.png" alt="a heart image that's giving Y2K">
+                <img id="dog" src="../assets/windows/dog.png" alt="a dog with a frizbee">
+            </div>
+        
+            <div id="container">
+                <div id="legal-section" class="popup">
+                    <div class="header-popup" id="legal-header">
+                        <h2>Legal mentions</h2>
+                    </div>
+                    <div id="content">
+                        <h3>Creators</h3>
+                        <p>
+                            Thanks to Tasnim, Lucie and Marwane, three student and the marvelous authors of
+                            this site for their wonderful work ! 
+                        </p>
+
+                        <h3>Personnal datas</h3>
+                        <p>
+                            We don't collect data, no shady business out here.
+                        </p>
+
+                        <h3>Cookies</h3>
+                        <p>
+                            No cookies here either, we prefer the CROUS's cookies (aka diabete cookies).
+                        </p>
+
+                        <h3>Notification process</h3>
+                        <p>
+                            As legal owners of this site, we reserve the right to modify this section at any time. 
+                            Users have therefore the responsability to consult it regularly.
+                        </p>
+
+                        <h3>Sources</h3>
+                        <p>We are going to include a lot of link that were really useful
+                            for the creation of our website, here they are:
+                        </p>
+                        <p>Our site is validated by W3C</p>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/howto/howto_css_disable_resize_textarea.asp">resize textarea</a></li>
+                            <li><a href="https://stackoverflow.com/questions/9363654/how-can-i-position-a-child-div-at-the-right-upper-of-the-parent">images here and there</a></li>
+                            <li><a href="https://validator.w3.org/">HTML/CSS Validator</a></li>
+                            <li><a href="https://www.mickael-martin-nevot.com/">our favorite teacher's website</a></li>
+                            <li><a href="https://www.letecode.com/tutoriels/tutoriel-css">css tuto</a></li>
+                            <li><a href="https://www.stylescss.com/v2-tutorials/html-css-fr.php">link between html and css</a></li>
+                            <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS">all about css</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <img id="star" src="../assets/windows/star.png" alt="a mario kart star image">
+            </div>
+
+        </div>
+
+        <div id="right">
+            <img src="../assets/windows/collage_ds.png" alt="">
+            
+            <div class="popup">
+                <img id="mii" src="../assets/mii.png" alt="a mii image">
+                <div class="header-popup">
+                    <h2>Leave a review</h2>
+                </div>
+                <form>
+                <label for="prenom">First name: <input id="prenom" type="text" name="prenom" required></label>
+                <label for="nom">Last name: <input id="nom" type="text" name="nom" required></label>
+                <label for="mail">Email: <input id="mail" type="email" name="mail" required></label>
+                
+                <label for="femme"><input id="femme" type="radio" name="sexe" checked>Woman </label>
+                <label for="homme"><input id="homme" type="radio" name="sexe"> Man </label>
+                <label for="kebab"><input id="kebab" type="radio" name="sexe"> Other (kebab)</label>
+                
+                <label for="impression">Your message <textarea  id="impression" name="impression" rows="2" cols="50"></textarea></label>
+                <div id="submit-section">
+                    <input type="submit" onclick="createEmail(event)" value="Leave a review">
+                </div>
+                
+            </form>
+            <img id="sparkles" src="../assets/windows/sparkles.png" alt="a sparkle image">
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="../scripts/date.js"></script>
+    <script src="../scripts/email.js"></script>
+</body>
+</html>

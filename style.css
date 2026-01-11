@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: auto;
+
+  /* min-height: 100vh; */
+
+  background-image: url("assets/wallpaperv2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mii-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#mii-image {
+  width: 92px;
+  height: 134px;bottom: 0;
+  right: 0;
+  transform: translate(0, -100%);
+  transform: rotate(-90deg);
+}
+
+header {
+  /* display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 10px 16px;
+  height: 76px;
+  background: rgba(142, 189, 222, 0.90);
+  font-family: "Kdam Thmor Pro";
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-style: solid; */
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 18px 0 9px;
+  top: 0;
+  width: 100%;
+  height: 76px;
+  background: rgba(142, 189, 222, 0.90);
+  font-family: "Kdam Thmor Pro";
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-style: solid;
+  z-index: 100;
+}
+
+#logo { 
+  text-decoration-line: underline;
+  color: white;
+  }
+
+a {
+  color: #0100C8;
+}
+
+a:visited {
+  color: #001D52;
+}
+
+a:hover {
+    color: #FFF;
+}
+
+header a:visited {
+  color: #FFF;
+}
+
+#date {
+  position: absolute;
+  top: 38px;
+  right: 35px;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left {
+    width: 60%;
+}
+
+#Titre {
+  margin-left: 150px;
+  color: #001D52;
+  font-family: "Kdam Thmor Pro";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#Titre2 {
+  margin-left: 150px;
+  margin-bottom: 240px;
+  color: #001D52;
+  font-family: "Kdam Thmor Pro";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+
+#right {
+    width: 40%;
+}
+
+#select-container {
+  display: block;
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+#selection {
+  color: #001D52;
+  font-family: "Kdam Thmor Pro";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  margin: 0;
+  padding: 0;
+}
+
+.popup {
+  background-color: #c0c0c0;
+  width: 515px;
+  height: 250px;
+  
+}
+
+.profile-description{
+  position: relative;
+  margin-left: 200px;
+  color: #000;
+  text-align: left;
+  font-family: "Kdam Thmor Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  bottom: 150px;
+}
+
+.profile-select-window {
+  background-color: #D9D9D9;
+  height: 155px;
+  width: 179px;
+  margin-left: 5%;
+}
+
+#profil{
+  color: black;
+  position: relative;
+  top: 55px;
+  margin-left: 38px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header-popup {
+    background-color: #0100C8;
+    height: 50px;
+    width: 100%;
+}
+
+.popup h1, p {
+    padding: 0 18px 18px;
+    margin: 0;
+}
+
+button {
+  width: 35px;
+}
+
+#legal{
+  color: #FFF;
+  font-family: "Kdam Thmor Pro";
+  font-size: 48px;
+  text-decoration-line: underline;
+  display: flex;
+  width: 535px;
+  height: 74px;
+  justify-content: center;
+
+}
+
+/* Sources : https://developer.mozilla.org/en-US/ 
+la vie j'adore ce site il est trop bien renseigné
+https://www.w3schools.com/ */
+
+/* base de la responsive */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-height: 100vh;
+  background-position: center;
+}
+
+/* Evite les débordements horizontaux */
+#main {
+  flex-wrap: wrap;
+}
+
+/* tablette (≤ 1024px)*/
+
+@media screen and (max-width: 1024px) {
+
+  #Titre,
+  #Titre2 {
+    font-size: 64px;
+    margin-left: 80px;
+  }
+
+  #left,
+  #right {
+    width: 100%;
+  }
+
+  #select-container {
+    margin-top: 200px;
+    transform: none;
+  }
+
+  .popup {
+    width: 90%;
+    max-width: 515px;
+    height: auto;
+  }
+
+  .profile-description {
+    margin-left: 40px;
+    bottom: 0;
+  }
+}
+
+/* telephone (≤ 600px) */
+
+@media screen and (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 12px;
+    text-align: center;
+  }
+
+  #date {
+    position: static;
+    margin-top: 6px;
+  }
+
+  #Titre,
+  #Titre2 {
+    font-size: 42px;
+    margin-left: 20px;
+    line-height: 120%;
+  }
+
+  #Titre2 {
+    margin-bottom: 80px;
+  }
+
+  #selection {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  #select-container {
+    margin-top: 40px;
+  }
+
+  .popup {
+    width: 95%;
+    height: auto;
+  }
+
+  .profile-description {
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .profile-select-window {
+    margin: 20px auto;
+  }
+
+  #legal {
+    font-size: 28px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Mii discret sur telephone */
+  #mii-container {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
