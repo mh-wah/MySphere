@@ -1,0 +1,84 @@
+/*
+Le fichier que tout les HTMLs utiliseront comme css, il servira à dresser la base de notre site
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 10px 16px; /* ça a fait que on a un overflow à droite */
+    width: calc(100% - 32px); /* c'est la fête */
+    height: 76px;
+    overflow-x: hidden;
+    top: 0;
+    background: rgba(142, 189, 222, 0.90);
+    font-family: "Kdam Thmor Pro";
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-style: solid;
+    z-index: 100;
+}
+
+a {
+    color: #0100C8;
+}
+/* Etait #001D52 */
+a:visited {
+    color: #0100C8;
+}
+
+a:hover {
+    color: #FFF;
+}
+
+header a, header a:visited {
+    color: #FFF;
+}
+
+img {
+    user-select: none;
+}
+
+#date {
+    position: absolute;
+    top: 38px;
+    right: 35px;
+    padding: 0 18px 18px;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup {
+    background-color: #c0c0c0;
+    max-width: fit-content;
+    max-height: fit-content;  
+}
+
+.popup p {
+    width: fit-content;
+}
+
+.popup h1, .popup p {
+    padding: 0 18px 18px;
+    margin: 0;
+}
+
+.header-popup {
+    background-color: #0100C8;
+    height: 50px;
+    width: 100%;
+}
+
+/* Un peu la flemmme d'avoir une barre de scroll bad moche */
+::-webkit-scrollbar, ::-webkit-scrollbar-button, ::-webkit-scrollbar-corner, 
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+    appearance: none;
+    width: 0;
+}

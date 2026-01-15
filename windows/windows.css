@@ -7,28 +7,11 @@ body {
     color: #000000;
     margin: 0;
     height: 1024px;
-    background-image: url("../assets/wallpaperv2.png");
+    background-image: url("../assets/wallpaperv2_webp.webp");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-y: auto;
     overflow-x: hidden;
-}
-
-header {
-  display: flex;
-  top: 0;
-  width: 100%;
-  padding: 10px 16px;
-  height: 76px;
-  background: rgba(142, 189, 222, 0.90);
-  font-family: "Kdam Thmor Pro";
-  color: #FFF;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  text-decoration-style: solid;
-  z-index: 100;
 }
 
 header a:visited {
@@ -47,13 +30,14 @@ header div {
 }
 
 #logo { 
-  text-decoration-line: underline;
-  }
-
-#date {
-  position: absolute;
-  right: 30px;
+    text-decoration-line: underline;
 }
+
+/* #date {
+    position: absolute;
+    top: 38px;
+    right: 30px;
+} */
 
 .popup {
     background-color: #c0c0c0;
@@ -64,11 +48,6 @@ header div {
     background-color: #0100C8;
     height: 24px;
     width: 100%;
-}
-
-.popup h1, p {
-    padding: 0 18px 18px;
-    margin: 0;
 }
 
 #ds {
@@ -228,17 +207,13 @@ button {
     transform: translate(-80%, 40%);
 }
 
-/* 
-#legal{
+
+.legal{
     color: #FFF;
-    position: absolute;
-    bottom : 1%;
-    font-size: 48px;
-    line-height: 150%;
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-underline-position: from-font;
-} */
+}
 
 /* Source : https://developer.mozilla.org/en-US/ 
 la vie j'adore ce site il est trop bien renseigné*/

@@ -5,12 +5,12 @@ body {
     font-family: "Kdam Thmor Pro";
     margin: 0;
     height: 1024px;
-    background-image: url("../assets/wallpaperv2.png");
+    background-image: url("../assets/wallpaperv2_webp.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -27,17 +27,17 @@ header {
     line-height: 150%;
     text-decoration-style: solid;
     z-index: 100;
-}
+} */
 
-header * {
+/* header * {
     padding: 10px 16px;
-}
+} */
 
 #logo { 
     text-decoration-line: underline;
 }
 
-a {
+/* a {
   color: #0100C8;
 }
 
@@ -47,11 +47,11 @@ a:visited {
 
 header a:visited {
   color: #FFF;
-}
+} */
 
-a:hover {
+/* a:hover {
     color: #FFF;
-}
+} */
 
 #main {
     display: flex;
@@ -69,7 +69,7 @@ a:hover {
     width: 40%;
 }
 
-  #right * {
+#right * {
     max-width: 100%;
 }
 
@@ -87,11 +87,6 @@ a:hover {
     height: 122px;
 }
 
-.popup h1, p{
-    padding: 0 18px 18px;
-    margin: 0;
-}
-
 .popup form {
     position: relative;
     padding: 18px;
@@ -105,12 +100,12 @@ a:hover {
     transform: translate(0, -100%);
 }
 
-.header-popup {
+/* .header-popup {
     background-color: #0100C8;
     min-height: 24px;
     height: fit-content;
     width: 100%;
-}
+} */
 
 .header-popup h2{
     margin: 0;
@@ -211,7 +206,7 @@ textarea {
     resize: none;
 }
 
-/* base de la responsive */
+/* base de la responsive
 
 html {
     box-sizing: border-box;
@@ -231,7 +226,7 @@ body {
     background-position: center;
 }
 
-/* tablette (≤ 1024px) */
+/* tablette (≤ 1024px) *
 
 @media screen and (max-width: 1024px) {
 
@@ -259,7 +254,7 @@ body {
     }
 }
 
-/* telephone (≤ 600px) */
+/* telephone (≤ 600px) *
 
 @media screen and (max-width: 600px) {
 
@@ -315,4 +310,4 @@ body {
         width: 100%;
         padding: 10px;
     }
-}
+} */
