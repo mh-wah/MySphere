@@ -1,6 +1,6 @@
 # MySphere
 MySphere is the fusion of a blog/png board/chaotic mix of 2001 windows aesthetic, nintendo lovers references and frutiger aero vibe. 
-Everything I like (or at least everything that was in my Pinterest feed in december) !
+Everything I like (or at least everything that was in my Pinterest feed in december) is in it !
 ## About this project
 ### Version 1.0.1
 For the moment it's just a static website but it changed so much compared to what it looked like when it was still a school project, you will find more details if you check the legal stuff page, I'm not going to spoil you ❤
