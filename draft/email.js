@@ -1,3 +1,5 @@
+// Faut que ça sorte de là ça pas besoin
+
 function createEmail (event) {
     // https://www.w3schools.com/jsref/event_preventdefault.asp
     event.preventDefault() // empêcher la page de se recharger

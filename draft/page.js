@@ -1,3 +1,5 @@
+// ça aussi vu qu'on a sorti Y2K et emo
+
 function showWindowNewPost () {
 
 }
