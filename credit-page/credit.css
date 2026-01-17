@@ -1,57 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-
 body {
     color: #001D52;
     font-family: "Kdam Thmor Pro";
     margin: 0;
-    height: 1024px;
     background-image: url("../assets/wallpaperv2_webp.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* header {
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    padding: 18px 0 9px;
-    top: 0;
-    width: 100%;
-    height: 76px;
-    background: rgba(142, 189, 222, 0.90);
-    font-family: "Kdam Thmor Pro";
-    color: #FFF;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-decoration-style: solid;
-    z-index: 100;
-} */
-
-/* header * {
-    padding: 10px 16px;
-} */
-
 #logo { 
     text-decoration-line: underline;
 }
-
-/* a {
-  color: #0100C8;
-}
-
-a:visited {
-  color: #001D52;
-}
-
-header a:visited {
-  color: #FFF;
-} */
-
-/* a:hover {
-    color: #FFF;
-} */
 
 #main {
     display: flex;
@@ -69,14 +28,8 @@ header a:visited {
     width: 40%;
 }
 
-#right * {
+#right img {
     max-width: 100%;
-}
-
-.popup {
-    position: relative;
-    background-color: #c0c0c0;
-    width: fit-content;
 }
 
 #sparkles {
@@ -87,10 +40,6 @@ header a:visited {
     height: 122px;
 }
 
-.popup form {
-    position: relative;
-    padding: 18px;
-}
 #mii {
     position: absolute;
     top: 0;
@@ -100,26 +49,10 @@ header a:visited {
     transform: translate(0, -100%);
 }
 
-/* .header-popup {
-    background-color: #0100C8;
-    min-height: 24px;
-    height: fit-content;
-    width: 100%;
-} */
-
-.header-popup h2{
-    margin: 0;
-    text-align: center;
-    padding: 8px 0;
-    color: #FFF;
-    text-decoration: underline #FFF 1px solid;
-    text-decoration-skip-ink: auto;
-}
-
-#Titre {
+h2 {
     color: #001D52;
     font-family: "Kdam Thmor Pro";
-    font-size: 4.5vw;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -132,7 +65,6 @@ header a:visited {
 
 }
 
-/* https://stackoverflow.com/questions/9363654/how-can-i-position-a-child-div-at-the-right-upper-of-the-parent */
 #title-section {
     position: relative;
 }
@@ -161,153 +93,116 @@ header a:visited {
     padding: 0;
     max-width: 70%;
     max-height: 500px;
+}
+
+#renovations {
+    min-width: 560px; 
+    min-height: 280px;
+}
+
+.content {
+    padding: 0px 16px 20px;
     overflow-y: scroll;
+    max-height: calc(450px - 36px);
 }
 
 #container  {
     position: relative;
 }
+
 #star {
     position: absolute;
     bottom: -20%;
     left: -20px;
     width: 139px;
     height: 148px;
-    z-index: 15;
+    z-index: 1;
 }
 
-#legal-section #content {
-    padding: 16px;
-    max-height: 500px;
+#collage_phone {
+    display: none;
 }
 
-label {
-    display: block;
-}
-
-#submit-section {
-    text-align: center;
-}
-
-input, textarea {
-    background-color: #D9D9D9;
-}
-
-input[type="submit"] {
-    margin-top: 18px;
-    border: 0;
-    color: #FFF;
-    background-color: #0100C8;
-    font-family: "Kdam Thmor Pro";
-}
-
-/* https://www.w3schools.com/howto/howto_css_disable_resize_textarea.asp */
-textarea {
-    resize: none;
-}
-
-/* base de la responsive
-
-html {
-    box-sizing: border-box;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-body {
-    min-height: 100vh;
-    background-position: center;
-}
-
-/* tablette (≤ 1024px) *
-
-@media screen and (max-width: 1024px) {
-
-    #left,
-    #right {
-        width: 100%;
-        margin: 0 24px;
-    }
-
-    #Titre {
-        font-size: 6vw;
-    }
-
-    #dog {
-        left: 30%;
-    }
-
-    #legal-section {
-        max-width: 100%;
-        margin: 32px 24px;
-    }
-
-    .popup {
-        max-width: 100%;
-    }
-}
-
-/* telephone (≤ 600px) *
-
+/* telephone (≤ 600px)  */
 @media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    body {
+        background-image: url("../assets/wallpaper_phone_webp.png");
+        min-width: 100%;
+        background-repeat: repeat;
+        background-size: 100%;
+    }
 
     header {
         flex-direction: column;
         align-items: center;
-        height: auto;
+        height: fit-content;
+        width: 100%;
         padding: 12px 0;
         text-align: center;
     }
 
-    header * {
-        padding: 6px 12px;
+    #date {
+        position: static;
+        margin-top: 6px;
     }
 
-    #main {
-        flex-direction: column;
+    #collage_phone {
+        display: block;
+        width: 247px;
+        height: 245px;
+        position: absolute;
+        top: 120px;
+        z-index: -1;
     }
 
-    #left,
-    #right {
-        margin: 0 16px;
-    }
-
-    #Titre {
-        font-size: 32px;
-        line-height: 120%;
-        text-align: center;
-    }
-
-    #heart,
-    #dog,
-    #sparkles,
-    #star {
+    #collage_pc {
         display: none;
     }
 
-    .popup {
+    #title-section {
+        min-height: fit-content;
+        margin: 0 0 120px 16px;
+        width: calc(100% - 16px);
+    }
+
+    #heart {
+        transform: none;
+    }
+
+    #dog {
+        position: absolute;
+        left: unset;
+        right: 0;
+        bottom: unset;
+        transform: scaleX(-1);
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left, #right {
         width: 100%;
+        min-height: fit-content;
+        margin-left: 0;
+    }
+
+    #left {
+        margin-bottom: 120px;
+    }
+
+
+    #renovations {
+        min-width: 40%; 
+        min-height: 150px;
+        margin: 0 auto 100px;
     }
 
     #legal-section {
-        max-width: 100%;
-        max-height: 300px;
-        margin: 24px 16px;
+        min-width: calc(100% - 64px);
     }
-
-    textarea {
-        width: 100%;
-    }
-
-    input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-    }
-} */
+}

@@ -1,13 +1,12 @@
 /*
 Le fichier que tout les HTMLs utiliseront comme css, il servira à dresser la base de notre site
 */
-
 header {
     display: flex;
     justify-content: space-between;
     position: sticky;
-    padding: 10px 16px; /* ça a fait que on a un overflow à droite */
-    width: calc(100% - 32px); /* c'est la fête */
+    padding: 10px 16px;
+    width: calc(100% - 32px);
     height: 76px;
     overflow-x: hidden;
     top: 0;
@@ -74,6 +73,16 @@ img {
     background-color: #0100C8;
     height: 50px;
     width: 100%;
+}
+
+.header-popup h2{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 18px;
+    color: #FFF;
+    text-decoration: underline #FFF 1px solid;
+    text-decoration-skip-ink: auto;
 }
 
 /* Un peu la flemmme d'avoir une barre de scroll bad moche */
