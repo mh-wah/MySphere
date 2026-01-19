@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-image: url("assets/wallpaperv2_webp.webp");
+    background-image: url("assets/wallpaper.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
